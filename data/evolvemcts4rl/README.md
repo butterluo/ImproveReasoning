@@ -1,6 +1,6 @@
 
 
-# Improving Logical Reasoning in LLMs: A Tool of Synthetic Data Generation with Evolutionary Learning and MCTS
+# Improving Logical Reasoning in LLMs: A Tool of Synthetic Data Generation using Evolutionary Learning and MCTS
 
 ## Overview
 

@@ -14,3 +14,4 @@ A repository about techniques to improve the reasoning capability of model.
 - [Customize a model with fine-tuning and DPO(Direct preference optimization)](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/fine-tuning?tabs=azure-openai%2Cturbo%2Cpython-new&pivots=programming-language-python)
 - [Azure DPO(Direct preference optimization)](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/fine-tuning?tabs=azure-openai%2Cturbo%2Cpython-new&pivots=programming-language-python#direct-preference-optimization-dpo-preview)
 - [Approaches to Improve Logical Reasoning in LLMs: The Techniques Behind the O3](docs/review2412.md)
+- [Improving Logical Reasoning in LLMs: A Tool of Synthetic Data Generation using Evolutionary Learning and MCTS](https://github.com/butterluo/ImproveReasoning/blob/main/data/evolvemcts4rl/README.md)

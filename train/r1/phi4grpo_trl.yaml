@@ -1,0 +1,56 @@
+# Model arguments
+model_name_or_path: microsoft/phi-4 
+model_revision: main
+torch_dtype: auto
+trust_remote_code: true
+attn_implementation: flash_attention_2
+load_in_4bit: true
+
+# Data training arguments
+dataset_name: AI-MO/NuminaMath-TIR
+dataset_configs:
+- all
+
+num_processes: 2
+
+# GRPO trainer config
+bf16: true
+use_vllm: false
+vllm_device: auto
+vllm_gpu_memory_utilization: 0.7
+do_eval: false
+eval_strategy: no
+gradient_accumulation_steps: 1
+gradient_checkpointing: true
+gradient_checkpointing_kwargs:
+  use_reentrant: false
+learning_rate: 2.0e-05
+log_level: info
+logging_steps: 10
+logging_strategy: steps
+lr_scheduler_type: cosine
+max_prompt_length: 256
+max_completion_length: 1024
+num_generations: 8
+max_steps: 10
+output_dir: ./chkp_dir/phi4_0207/
+overwrite_output_dir: true
+per_device_eval_batch_size: 1   
+per_device_train_batch_size: 1
+push_to_hub: false
+save_strategy: "steps"
+save_steps: 4
+save_total_limit: 8
+seed: 3407
+warmup_ratio: 0.1
+
+use_peft: true
+lora_task_type: CAUSAL_LM
+lora_r: 16
+lora_target_modules:
+  - gate_proj
+  - up_proj
+  - down_proj
+lora_alpha: 16
+lora_dropout: 0
+use_rslora: false

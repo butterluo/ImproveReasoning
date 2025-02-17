@@ -1,4 +1,4 @@
-# Reproduce R1 Aha Moment
+# Reproduce Deepseek R1-zero Aha Moment
 
 ## The Code
 We used the method of `accelerate` + `deepspeed` + `transformers` + `trl.GRPOTrainer`. Do not use `unsloth` acceleration because it does not yet support distributed training.  

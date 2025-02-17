@@ -126,6 +126,7 @@ $f(7) = 3(7) - 2 = 21 - 2 = 19$,
 but wait! This is incorrect.
 
 In fact, we have $f(n) = n^2 - 1$ for $n < 4$, so we need to use this definition, and substitute $7$ for $n$:
+......
 ```
 The "Aha moment":
 ```log
@@ -138,7 +139,7 @@ Aha, this is true. If $p(x) = x$, then the answer is <span class="r">4.000000</s
 ......
 ```
 
-## From the Perspective of Eval Metrics.
+## From the Perspective of Eval Metrics
 By default, `trl` saves metrics in TensorBoard format. We can open TensorBoard to view them using the following command:  
 ```shell
 tensorboard --logdir .
